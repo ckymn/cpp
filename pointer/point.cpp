@@ -3,11 +3,10 @@ using namespace std;
 
 int main()
 {
-    // pointer'lara adres degeri atama islemi &(ampersan) ile yapilir
-    // pointer'lari gostermenin yolu ise *<pointer adi> ile yapilir
+    // pointer'lar degisken adresi isareti yaparlar
 
     int a = 10;
-    int *ptr = &a;
+    int *ptr = &a; // a'nin referansini ptr pointerina atamak 
 
     cout << &a; // 0x61fe14
     cout << ptr; // 0x61fe14

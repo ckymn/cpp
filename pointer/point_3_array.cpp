@@ -27,7 +27,7 @@ int main()
     cout << *(ptr +3) << endl;//4
     cout << ptr[4] << endl;//5
     cout << ptr[6] << endl;//! 41
-    cout << arr[6] << endl;
+    cout << arr[6] << endl;//! 41
 
     return 0;
 }
