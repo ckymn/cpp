@@ -22,7 +22,9 @@ int main()
     cout << "string : " << sizeof(string) << endl;//32-256bit
     cout << "Struct : " << sizeof(byteNumber) << endl;//56-56*8bit (4+1+32+4+8+ compiler ekstradan veriyor)
     int values[] = {1,23,4,4,5};
-    cout << "array : " << sizeof(values) << endl; //20-160bit
+    cout << "array : " << sizeof(values) << endl; //20-160bit (int degerler 4+4+4+4 = 20)
+    cout << "array boyutu : " << sizeof(values)/sizeof(values[0]) << endl; //5
+    cout << "array sayi degeri : " << sizeof(values[0]);//4
 
     return 0;
 }

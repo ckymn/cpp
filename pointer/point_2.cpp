@@ -6,6 +6,7 @@ void newNumber(int *ptr)
     *ptr = 20;
     cout << "val referans degeri : " << &ptr << endl; //0x61fdf0
     cout << "val degeri : " << *ptr << endl; // 20
+    cout << "val ptr degeri : " << ptr << endl;
     cout << "new val in referans degeri : " << &ptr << endl; // 0x61fdf0
 }
 int main()
