@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+ 
 struct byteNumber
 {
     int id;
