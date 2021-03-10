@@ -5,16 +5,26 @@ int main()
 {
     // pointer'lar degisken adresi isareti yaparlar
 
-    int a = 10;
-    int *ptr = &a; // a'nin referansini ptr pointerina atamak 
+    int a = 100;
+    int *p;
+    p = &a; // a'nin referansini ptr pointerina atamak
 
-    cout << &a; // 0x61fe14
-    cout << ptr; // 0x61fe14
-    cout << *ptr; // 10
+    cout << "a : " << a << endl;  //100
+    cout << "&a : " << &a << endl;//0x61fe14
+    cout << "p : " << p << endl; //0x61fe14
+    cout << "&p : " << &p << endl;//0x61fe10
+    cout << "*P : " << *p << endl; //100
 
-    *ptr = 6;
+    //burda normal de ptr bir pointer onu farkli bir pointera atadigimiz zaman ** kullanilir.
+    int **q;
+    q = &p;
 
-    cout << "degiskenin yeni degeri : " << *ptr; // 6
+    cout << "q : " << q << endl; //0x61fe10
+    cout << "&q : " << &q << endl;// 0x61fe08
+    cout << "**q : " << **q << endl; //100
+    cout << "p : " << p << endl; //0x61fe14
+    cout << "&p : " << &p << endl; //0x61fe10
+    cout << "*p : " << *p << endl; //100
 
     return 0;
 }
